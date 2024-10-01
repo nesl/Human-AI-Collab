@@ -53,11 +53,11 @@ EndSection
 
 At this point, you can either build the Docker image or pull it. If you want to build it run the next command:
 
-- Run `cd webrtc` and then `docker build -t julian700/web .`. Go back to the root folder and run `cd simulator` and then `docker build -t julian700/simulator .`.
+- Run `cd webrtc` and then `docker build -t XXXX/web .`. Go back to the root folder and run `cd simulator` and then `docker build -t XXXX/simulator .`.
 
 Else, pull it from its repo:
 
-- Run `docker pull julian700/simulator` and `docker pull julian700/web`.
+- Run `docker pull XXXX/simulator` and `docker pull XXXX/web`.
 
 ### Virtual Video Devices Configuration
 
