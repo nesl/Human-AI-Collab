@@ -69,7 +69,7 @@ Finally make sure to read the following: [Virtual Video Devices](#virtual-video-
 
 ## Manual Setup
 
-Use `git clone --recurse-submodules https://github.com/nesl/AI-Collab.git` to clone the repository with all the submodules.
+Use `git clone --recurse-submodules https://github.com/XXXX/AI-Collab.git` to clone the repository with all the submodules.
 
 ### TDW Simulator
     
