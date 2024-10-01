@@ -2,6 +2,10 @@
 
 This simulator builds upon [ThreeDWorld](https://github.com/threedworld-mit/tdw) (TDW), a platform for interactive multi-modal physical simulation. This simulator as of now allows multiple human users to control the agents present in a single scene in a concurrent manner. It also incorporates an HTTP server to which users can connect to remotely control the agents.
 
+## Data
+
+All data collected from the human-AI experiments can be downloaded by following the instructions located in the **data** directory.
+
 ## System Requirements
 
 - Linux (we've tested TDW on Ubuntu 18, 20, and 22)
@@ -125,8 +129,11 @@ Change to the **ai_controller** directory and install the gym environment by usi
 
 ## AI Control of a Robot
 
-1. Change to the **ai_controller** directory and run the **server_command** script. You have to also create a new certificate + key as this script executes an HTTPS server to setup the WebRTC parameters. Inside the **server_command**, specify the certificate, key and host address associated with this server, as well as the address to connect to.
-2. Alternatively, if you want to run many agents at the same time, you can use the **ai_controller/multiple_robot_instantiation.sh** using as the command-line arguments, the number of agents you want to instantiate and the port of the server where to connect. This will open a terminal with each tab representing each of the robots. This script just runs whatever you put in **server_command** and changes the **--robot-number** argument accordingly.
+1. Change to the **ai_controller** directory.
+2. The team configuration is determined by the **team_structure.yaml** file. Modify that file to make the agent act according to a particular team strategy. 
+3. Run the **server_command** script. You have to also create a new certificate + key as this script executes an HTTPS server to setup the WebRTC parameters. Inside the **server_command**, specify the certificate, key and host address associated with this server, as well as the address to connect to.
+4. Alternatively, if you want to run many agents at the same time, you can use the **ai_controller/multiple_robot_instantiation.sh** using as the command-line arguments, the number of agents you want to instantiate and the port of the server where to connect. This will open a terminal with each tab representing each of the robots. This script just runs whatever you put in **server_command** and changes the **--robot-number** argument accordingly.
+
 
 ### Note
 
