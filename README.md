@@ -1,4 +1,4 @@
-# AI-Collaboration Simulator
+# Human-AI Collaboration Simulator
 
 This simulator builds upon [ThreeDWorld](https://github.com/threedworld-mit/tdw) (TDW), a platform for interactive multi-modal physical simulation. This simulator as of now allows multiple human users to control the agents present in a single scene in a concurrent manner. It also incorporates an HTTP server to which users can connect to remotely control the agents.
 
